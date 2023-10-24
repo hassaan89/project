@@ -1,0 +1,843 @@
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+#username{
+    color: white;
+    font-size: 20px;
+
+}
+.header{
+    background-image: url("./Auction\ Completd.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+#home a {
+    color: white;
+    text-align: center;
+  padding: 10px 13px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:transparent;
+    color: #ffff;
+padding: 30px;
+
+}
+.nav_links a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav_links a:hover{
+    transition: .3s;
+    color: white;
+    text-align: center;
+  padding: 10px 13px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+}
+.logo{
+    font-size: 32px;
+ 
+}
+.menu {
+    display: flex;
+gap: 1rem;
+    font-size: 18px;
+
+}
+ 
+  /* responsive navbar */
+  input[type=checkbox]{
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  /* media queries */
+  @media (max-width:768px){
+    .menu{
+        display: none;
+        position: absolute;
+        background:linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+        right: 0;
+        left: 0;
+        text-align: center;
+      padding: 20px;
+    }
+    menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+      }
+    
+      .menu li + li {
+        margin-top: 20px;
+      }
+    
+    .hamburger{
+        display: block;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+}
+/* arshia */
+
+.card_content{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dashed rgb(194, 189, 189);
+    margin: 10px;
+    border-bottom:1px  dashed rgb(194, 189, 189);
+
+}
+.card_timer{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px dashed rgb(194, 189, 189);
+    margin: 10px;
+ 
+}
+.current_bid{
+    display: flex;
+    align-items: center;
+} 
+
+.current_bid i{
+font-size: 30px;
+color: green;
+}
+#dollar{
+    color: red;
+}
+/* arshia */
+.l{
+margin-top: 60px;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+.l h1{
+    flex-wrap: wrap;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+.l h3{
+    flex-wrap: wrap;
+    color: white;
+}
+.para{
+ margin-right: 10px;
+ color: white;
+ margin-top: 10px;
+ flex-wrap: wrap;
+}
+.l button{
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 15px 50px;
+    color: white;
+    border: none;
+    background:linear-gradient(to top,orange,yellow);
+    font-weight: 500;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+}
+.l h4{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.z{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.ca img{
+    width: 150px;
+    height: 150px;
+}
+.ca{
+    background-color: white;
+ width: 250px;
+  padding: 15px;;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 3px rgb(194, 189, 189);
+  cursor: pointer;
+  flex-wrap:wrap ;
+}
+.ca:hover{
+    background: linear-gradient(-45deg,rgb(110, 110, 255),rgb(164, 14, 233));
+    color: white;
+    transform: scale(1.1);
+transition: .4s;
+}
+.auction{
+margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+   
+}
+.auction h1{
+    font-weight: 500;
+}
+.auction img{
+    width: 100px;
+    height: 100px;
+}
+.view-button{
+margin-left: 60%;
+border:1px solid rgb(164, 14, 233);
+border-radius: 30px;
+color: black;
+padding: 10px 20px;
+background-color: white;
+cursor: pointer;
+}
+.view-button:hover{
+    background:linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+    color: white;
+    border: none;
+    box-shadow: -1px 1px 11px -2px rgb(80, 57, 57);
+}
+
+.c img{
+height: 200px;
+   width: 200px;
+    border-radius: 10px;
+    margin-top: 30px;
+} 
+
+.c h5{
+    margin-top: 20px;
+    margin: 10px;
+    padding: 8px;
+
+}
+
+.complete-border img{
+    height: 200px;
+       width: 200px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }  
+    .complete-border h5{
+        margin-top: 20px;
+        margin: 10px;
+        padding: 8px;
+        border-bottom: 1px dashed rgb(179, 174, 174);
+    }
+    .complete-border h4{
+        color: red;
+    }
+    .complete-border{
+        margin-bottom: 40px;
+        border-radius: 10px;
+        flex: 0 0 30%;
+        background-color: white;
+        box-shadow: -1px 1px 11px -2px rgb(179, 173, 173);
+    margin-top: 50px;
+     }
+ .c{
+    margin-bottom: 40px;
+    border-radius: 10px;
+    flex: 0 0 30%;
+    background-color: white;
+    box-shadow: -1px 1px 11px -2px rgb(179, 173, 173);
+margin-top: 50px;
+ }
+.money{
+background-color:white;
+border-radius: 10px;
+margin: 20px;
+padding: 1px;
+box-shadow: 0 10px 15px 0 rgb(194, 189, 189);
+}
+
+.r{
+ background-color:white;
+border-radius: 10px;
+margin: 20px;
+padding: 1px;
+box-shadow: 0 10px 15px 0 rgb(194, 189, 189);
+}
+.social h3{
+    font-size: 15px;
+}
+.social h4{
+    font-size: 15px;  
+}
+.bid-button{
+margin: 20px;
+padding: 10px 50px;
+color: white;
+font-weight: 500;
+border: none;
+border-radius: 30px;
+background:linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+box-shadow: 0 10px 10px 0 rgb(169, 169, 245);
+}
+
+.f{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   text-align: center;
+    flex-wrap:wrap;  
+}
+.c{
+    background: linear-gradient(45deg,rgb(110, 110, 255),rgb(164, 14, 233));
+    color: white;
+}
+.c img:hover{
+transition: .4s;
+    transform: scale(1.1);
+}
+.complete-border{
+   background: linear-gradient(45deg,rgb(110, 110, 255),rgb(164, 14, 233));
+   color: white;
+}
+.complete-border img:hover{
+    transform: scale(1.1);
+    transition: .4s;
+}
+.lines{
+    text-align: center;
+    margin-top: 100px;
+    background: linear-gradient(400deg,rgb(110, 110, 255),rgb(164, 14, 233));
+  width: 60%;
+  padding: 30px;
+  border-radius: 30px;
+  color: white;
+  margin-left: 20%;
+}
+
+.complete-Auction{
+    color: darkblue;
+background-color: white;
+border: none;
+padding: 10px 40px;
+border-radius: 30px;
+font-weight: 500;
+}
+.complete-Auction:hover{
+    color: white;
+    background-color: darkblue;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   text-align: center;
+    flex-wrap:wrap;
+}
+
+
+.container-footer{
+  max-width: 1170px;
+  background:linear-gradient(to left,rgb(110, 110, 255),rgb(164, 14, 233));
+  margin: auto;
+}
+.inline{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+ul{
+  list-style: none;
+
+}
+
+
+.user-link a{
+    text-decoration: none;
+    color: white;
+
+}
+.user-link{
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(to top,rgb(110,110,255),rgb(164,14,233));
+}
+.user-link a:hover{
+    color: white;
+}
+.user-link:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+.products-preview{
+    position: fixed;
+    top:0; left:0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+ }
+ 
+ .products-preview .preview{
+    display: none;
+    padding:2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin:2rem;
+    width: 25rem;
+ }
+ 
+ .products-preview .preview.active{
+    display: inline-block;
+ }
+ 
+ .products-preview .preview img{
+   height: 250px;
+    width: -webkit-fill-available;
+
+ }
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:0.2rem; right:0.5rem;
+   cursor: pointer;
+   color:red;
+   font-size: 2rem;
+}
+
+.products-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 1.5rem;
+}
+
+.products-preview .preview .stars{
+   padding:1rem 0;
+   font-size: 1.7rem;
+}
+
+.products-preview .preview .stars i{
+   color:#27ae60;
+}
+
+.products-preview .preview .stars span{
+   color:#999;
+}
+
+.products-preview .preview p{
+   line-height: 1.5;
+   padding:0rem 0;
+   font-size: 1.2rem;
+   color:#777;
+}
+
+.products-preview .preview .price{
+   padding:1rem 0;
+   font-size: 1.2rem;
+   color:#27ae60;
+}
+.products-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 0.3rem;
+}
+
+.products-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1rem;
+   color:#444;
+   border:.1rem solid #444;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 10px;
+}
+
+.products-preview .preview .buttons a.cart{
+   background:transparent;
+   color:black;
+   font-weight: bold;
+}
+
+.products-preview .preview .buttons a.cart:hover{
+    background: linear-gradient( 45deg,rgb(110, 110, 255),rgb(164, 14,233)) ;
+   color: white;
+   border: none;
+   transition: .4s;
+ 
+}
+
+.products-preview .preview .buttons a.buy:hover{
+   color:#fff;
+   background: linear-gradient( 45deg,rgb(110, 110, 255),rgb(164, 14,233));
+   border: none;
+transition: .4s;
+}
+.feedback-card{
+    background-color: white;
+    box-shadow: 0 10px 10px 3px rgb(194, 189, 189);
+width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    height: 190px;
+   
+}
+.feedback-para{
+   margin-top: 20px;
+    border-bottom: 1px dashed rgb(214, 209, 209);
+}
+.feedback{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+gap: 10px;
+margin: 100px;
+flex-wrap: wrap;
+}
+
+.feedback-card img{
+ width: 50px;
+ height: 60px;
+ border-radius: 50%;
+background-color: gray;
+margin-left:10px;
+margin-top: 20px;
+margin: 10px;
+}
+.feedback-stars{
+    color: orange;
+    
+}
+.feedback-btm{
+    display: flex;
+   }
+.name {
+margin-top: 10px;
+}
+.complete-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   text-align: center;
+    flex-wrap:wrap;
+}
+.bid-complete{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   text-align: center;
+    flex-wrap:wrap;
+}
+.main-feedback{
+    background:linear-gradient(to top ,rgb(110, 110, 255),rgb(164, 14,233));
+    box-shadow: 0 10px 10px 3px rgb(194, 189, 189);
+    width: 50%;
+    border-radius: 20px;
+padding: 50px;
+margin: 0 auto;
+margin-top: 100px;
+}
+h5 {
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+span{
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.bfor {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bfor:hover {
+transition:.4s;
+transform: scale(1.1);
+
+
+}
+
+.ticker-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:linear-gradient(45deg ,rgb(110, 110, 255),rgb(164, 14,233));
+    color: #fff;
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+#ticker {
+    font-size: 18px;
+    white-space: nowrap;
+}
+.gallery{
+display: flex;
+overflow: auto;
+    scroll-snap-type: x mandatory;
+    gap:30px;
+    background: linear-gradient(to left,rgb(110, 110, 255),rgb(164, 14,233));
+    -webkit-overflow-scrolling: touch;
+height: 400px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+.gallery img{
+    width: 300px;
+    height: 300px;
+    scroll-snap-align: center;
+    margin-top: 55px;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px black);
+    cursor: pointer;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+    transition: .4s;
+   
+}
+ #gallery-para{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+ }
+ span{
+    color: purple;
+ }
+ #pre-loader{
+    background:rgb(80, 2, 104) url("./1f2df8fad7e9bfcb18d9d553f8fc25-unscreen.gif") no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 20%;
+ }
+ .About-us{
+    min-height: 50vh;
+    position: relative;
+    margin-top: 60px;
+ }
+.About-us::before{
+    content: '';
+    background-image: url('./stock-photo-auction-gavel-on-purple-background-with-dollar-coins-concept-of-sales-d-rendering-2161624707-removebg-preview.png');
+    background-position: center;
+background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.About{
+background-color:transparent;
+/* box-shadow: 0 10px 10px 3px rgb(194, 189, 189); */
+position: absolute;
+font-weight: bold;
+
+}
+.About p{
+    padding-left: 10px;
+    padding-top: 10px;
+    color:#454342;
+}
+.About h1{
+    padding-left: 10px;
+    color:#6f6868;
+    text-align: center;
+    margin-top: 50px; 
+}
+.contact-us{
+    width: 50%;
+    background: linear-gradient(to left,rgb(110, 110, 255),rgb(164, 14,233));
+    box-shadow: 0 10px 10px 3px rgb(194, 189, 189) ;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 100px;
+}
+.contact-group label{
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+.contact-group input{
+    background: white;
+    border-color: white;
+    color: black;
+}
+.contact-group{
+    padding: 10px;
+}
+.contact-us h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contact-button{
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 15px;
+}
+#contact-button:hover{
+    transition: .4s;
+transform: scale(1.1);
+}
+.footer{
+    /* background: linear-gradient(45deg,rgb(110, 110, 255),rgb(164, 14,233)); */
+    background-color: black;
+    height: 250px;
+    margin-top: 200px;
+    color: white;
+    width: 100%;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content h1,img{
+    margin-top: 30px;
+}
+.footer-copy{
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.footer-links a{
+height: 45px;
+width: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(45deg,rgb(110, 110, 255),rgb(164, 14,233));
+    cursor: pointer;
+margin: 10px;
+font-size: 20px;
+border: none;
+margin-bottom: 70px;
+}
+.footer-links a:hover{
+    color: white;
+    transition: .4s;
+    transform: scale(1.2);
+}
+.website-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .website-counter {
+    background-color: #ff4957;
+    height: 50px;
+    width: 80px;
+    color: white;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  
+  /* Styles for reset button */
+  #reset {
+    margin-top: 20px;
+    background-color: #008cba;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 8px 20px;
+    color: white;
+    border: 0;
+  }

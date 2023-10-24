@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/d94f74d081.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!--custom css-->
+
+</head>
+<body>
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+  /*general css */
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif; 
+  }
+  /*custom css */
+ .container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom,rgb(110,110,255),rgb(164,14,233));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .container .login-box{
+    position: absolute;
+    width: 390px;
+    height: 420px;
+    background-color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 10px 100px 3px rgb(194, 189, 189); ;
+
+ }
+ .login-box h2 {
+    font-size: 35px;
+    color:black;
+    text-align: center;
+ }
+ .login-box h5{
+    color: rgb(182, 178, 178);
+    font-weight: 100;
+    text-align: center;
+ }
+  .login-box .input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+  }
+  .input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    padding: 0 35px  0 5px;
+  }
+  .input-box input::placeholder {
+    color: black;
+  }
+  .input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  .remember-forget input{
+    margin-right: 10px;
+  }
+   
+  
+  .login-box  .Remember-forgot {
+    margin: 15px 0 15px;
+    font-size: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .remember-forgot label input {
+    margin-right: 3px;
+  }
+ 
+ 
+  .login-box .register-link {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+
+
+  }
+
+  .remember-forgot a{
+  
+    color: #fff;
+    text-decoration: none;
+
+  }
+  .b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    background:linear-gradient(45deg,rgb(110,110,255),rgb(164,14,233));
+  }
+ 
+  .b a{
+    text-decoration: none;
+    padding: 8px 20px;
+  
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+ font-weight: 600;
+ font-size: 15px;
+    background:linear-gradient(45deg,rgb(110,110,255),rgb(164,14,233));
+  }
+  a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+#home a {
+    color: white;
+    text-align: center;
+  padding: 15px 13px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:black;
+    color: #ffff;
+}
+.nav_links a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav_links a:hover{
+    transition: .3s;
+    color: white;
+    text-align: center;
+  padding: 15px 13px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+}
+.logo{
+    font-size: 32px;
+}
+.menu {
+    display: flex;
+gap: 1rem;
+    font-size: 18px;
+
+}
+ 
+  /* responsive navbar */
+  input[type=checkbox]{
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  /* media queries */
+  @media (max-width:768px){
+    .menu{
+        display: none;
+        position: absolute;
+        background:linear-gradient(to bottom,rgb(110, 110, 255),rgb(164, 14, 233));
+        right: 0;
+        left: 0;
+        text-align: center;
+      padding: 20px;
+    }
+    menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+      }
+    
+      .menu li + li {
+        margin-top: 20px;
+      }
+    
+    .hamburger{
+        display: block;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+}
+.user-link a{
+    text-decoration: none;
+    color: white;
+
+}
+.user-link{
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(to top,rgb(110,110,255),rgb(164,14,233));
+}
+.user-link a:hover{
+    color: white;
+}
+.user-link:hover{
+    transform: scale(1.2);
+    transition: .4s;
+}
+ 
+  /* .social-link{
+    display: flex;
+} */
+
+    
+    
+    </style>
+   
+    <div class="container">
+      
+        <div class="login-box">
+          
+            <!--login form-->
+            <form action="">
+           
+                <h2>HI, THERE</h2>
+                <h5>You can SignUp to your BidSpirit account here.
+
+                </h5>
+                <div class="input-box">
+                    
+                    <span class="icon"><i class="fa-solid fa-Envelop"></i></span>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </div>
+                <div class="remember-forget">
+                <label for="remember"><input type="checkbox">Remember Me</label>
+                
+                </div>
+        
+               <div class="b">
+<button>SignUp</button>
+
+               </div>
+            
+            </form>
+       
+        </div>
+
+    </div>
+  
+
+</body>
+</html>
+               
+                
